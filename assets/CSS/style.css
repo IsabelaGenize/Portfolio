@@ -229,3 +229,17 @@ p {
 }
 
 }
+
+#resultado-wrapper {
+    margin-top: 20px;
+    background-color:beige;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1);
+    color: #d72e6f;
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 10px;
+}

@@ -42,16 +42,13 @@
             margin: 0 auto; 
         }
 
-        
         #secao-projetos {
             display: flex; 
             justify-content: space-between; 
             padding: 20px; 
         }
 
-       
         .cartao {
-            
             margin-bottom: 20px; 
             box-sizing: border-box; 
         }
@@ -67,7 +64,6 @@
             border: 1px solid #ddd;
         }
 
-        
         .cartao:hover .cartao-texto {
             display: block; 
         }
@@ -141,48 +137,50 @@
 
 <!-- Seção do formulário -->
 <section id="sessao-orcamento">
-    <h1>Venha fazer parte da nossa Comunidade </h1>
-    <form action="">
+    <h1>Venha fazer parte da nossa Comunidade! Faça um orçamento gratuito! </h1>
+    <form id="formOrcamento">
         <label for="nome">Nome</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" required>
 
         <label for="email">E-mail</label>
-        <input type="email" id="email">
+        <input type="email" id="email" required>
 
         <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone">
+        <input type="tel" id="telefone" required>
 
-        <label for="livros">Número de Livros que você consome anualmente?</label>
-        <input type="number" id="livros">
+        <label for="livros" class="form-label">Número de Livros que você consome mensalmente</label>
+        <input type="number" id="livros" required>
 
-        <label for="tipo">Selecione a sua categoria favorita para receber uma resenha surpresa no seu e-mail!</label>
-        <select name="tipo" id="tipo">
+        <label for="tipo">Selecione a sua categoria favorita para receber uma resenha surpresa no seu e-mail! E descobrirmos o seu gênero favorito e te guiar futuramente na nossa comunidade!</label>
+        <select name="tipo" id="tipo" required>
             <option value="1">Romance</option>
             <option value="2">Terror</option>
             <option value="3">Ficção Científica</option>
             <option value="4">Literatura</option>
             <option value="5">Fantasia</option>
             <option value="6">História e Biografia</option>
-            <option value="7">Autoajuda e Desenvolvimento Pessoal:</option>
+            <option value="7">Autoajuda e Desenvolvimento Pessoal</option>
             <option value="8">Não Ficção</option>
-            <option value="9">Histórias em Quadrinhos e Graphic Novels:</option>
+            <option value="9">Histórias em Quadrinhos e Graphic Novels</option>
             <option value="10">Livros Infantis e Infantojuvenis</option>
-            <option value="11">Poesia:</option>
+            <option value="11">Poesia</option>
             <option value="12">Mistério e Suspense</option>
         </select>
 
-        <label for="whatsapp">Gostaria de receber nossas ofertas exclusivas por Whatsapp?</label>
-        <input name="whatsapp" type="radio" id="whatsapp_sim">
-        <label for="whatsapp_sim">Sim</label>
+        <label for="whatsapp">Gostaria que o seu plano na Comunidade tenha gêneros sortidos ou apenas personalizados de acordo com o seu gosto?</label>
+        <input name="whatsapp" type="radio" id="whatsapp_sim" required>
+        <label for="whatsapp_sim">Sim, Quero descobrir livros novos!</label>
         <input name="whatsapp" type="radio" id="whatsapp_nao">
-        <label for="whatsapp_nao">Não</label>
+        <label for="whatsapp_nao">Não, Quero manter somente livros de gêneros que eu goste!</label>
 
         <button type="submit">Enviar</button>
     </form>
+    <div id="resultado-wrapper">
+        <div id="resultado"></div>
+    </div>
 </section>
 
 
-
+    <script src="./assets/JS/script.js"></script>
 </body>
 </html>
-
