@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Isabela Genize</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css"> 
+    <style>
+        body {
+            overflow-x: scroll; /* Adicionando barra de rolagem horizontal permanente */
+        }
+
+        .home {
+            text-align: center; /* Centralizando o conteúdo */
+        }
+
+        .home span {
+            display: block; /* Fazendo com que o span ocupe toda a largura e fique em uma nova linha */
+            margin-bottom: 20px; /* Adicionando espaço abaixo do texto */
+        }
+
+        .home button {
+            display: block; /* Fazendo com que o botão ocupe toda a largura e fique em uma nova linha */
+            margin: 0 auto; /* Centralizando o botão horizontalmente */
+        }
+
+        .second-section {
+            position: relative; /* Definindo posição relativa para permitir posicionamento absoluto */
+        }
+
+        .second-section h2 {
+            position: absolute; /* Posicionando o título absolutamente */
+            top: 0; /* Colocando o título no topo */
+            left: 50%; /* Centralizando horizontalmente */
+            transform: translateX(-50%); /* Corrigindo o deslocamento horizontal */
+            background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente */
+            padding: 10px; /* Adicionando espaçamento interno */
+        }
+
+        .livro-foto {
+            display: block; /* Tornando a imagem um bloco para garantir que o título fique acima */
+            margin: 0 auto; /* Centralizando horizontalmente */
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Livraria Virtual</h1>
-    <span>Bem-Vindo á sua Livraria Virtual </span>
-    <a href="#"></a>
+    <section class="home">
+        <h1>Livraria Virtual</h1>
+        <span>Bem-Vindo à sua Livraria Virtual </span>
+        <button>Saiba Mais</button>
+        <a href="#"></a>
+    </section>
 
-    
+    <section class="second-section">
+        <h2>Os Melhores Livros e Resenhas você encontra aqui!</h2>
+        <img src="./assets/CSS/images/Star 1.png" class="livro-foto" alt="foto do livro" /> 
+        <div>
+            <p>Em busca de aventuras emocionantes entre páginas? Descubra um mundo de possibilidades literárias em nosso site! Explore uma vasta coleção de livros online, onde cada página é uma porta para uma nova jornada. Além disso, mergulhe em resenhas que irão guiar você na escolha do próximo livro a embarcar. Descubra histórias que encantam, emocionam e inspiram. Não espere mais, comece sua jornada literária agora!</p>
+        </div>
+    </section>
+   
+    <section id >
+        
+    </section>
 </body>
 </html>

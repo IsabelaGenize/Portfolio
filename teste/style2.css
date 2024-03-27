@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical para a página inteira */
+}
+
+section {
+    padding: 20px;
+}
+
+.home {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.informacoes {
+    background-color: #eaeaea;
+}
+
+.content {
+    max-width: 600px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
