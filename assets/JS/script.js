@@ -59,15 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 preco += 0; // 
         }
 
-        // Adicionando custo extra se quiser ofertas por WhatsApp
+       
         if (querOfertasWhatsapp) {
-            preco += 5; // Preço extra para ofertas por WhatsApp
+            preco += 5; 
         }
 
-        // Exibindo o resultado na página
+       
         resultado.innerHTML = `Olá ${nome}, o valor total do seu plano mensalmente é de: R$ ${preco.toFixed(2)}.`;
 
-        // Exibindo o resultado e aplicando estilos
-        resultadoWrapper.style.display = "block"; // Exibir a div wrapper do resultado
+        
+        resultadoWrapper.style.display = "block"; 
     });
 });
