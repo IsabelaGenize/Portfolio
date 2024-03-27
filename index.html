@@ -7,39 +7,80 @@
     <link rel="stylesheet" href="./assets/CSS/style.css"> 
     <style>
         body {
-            overflow-x: scroll; /* Adicionando barra de rolagem horizontal permanente */
+            overflow-x: scroll;
         }
 
         .home {
-            text-align: center; /* Centralizando o conteúdo */
+            text-align: center; 
         }
 
         .home span {
-            display: block; /* Fazendo com que o span ocupe toda a largura e fique em uma nova linha */
-            margin-bottom: 20px; /* Adicionando espaço abaixo do texto */
+            display: block; 
+            margin-bottom: 20px; 
         }
 
         .home button {
-            display: block; /* Fazendo com que o botão ocupe toda a largura e fique em uma nova linha */
-            margin: 0 auto; /* Centralizando o botão horizontalmente */
+            display: block; 
+            margin: 0 auto; 
         }
 
         .second-section {
-            position: relative; /* Definindo posição relativa para permitir posicionamento absoluto */
+            position: relative; 
         }
 
         .second-section h2 {
-            position: absolute; /* Posicionando o título absolutamente */
-            top: 0; /* Colocando o título no topo */
-            left: 50%; /* Centralizando horizontalmente */
-            transform: translateX(-50%); /* Corrigindo o deslocamento horizontal */
-            background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente */
-            padding: 10px; /* Adicionando espaçamento interno */
+            position: absolute; 
+            top: 0; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 10px; 
         }
 
         .livro-foto {
-            display: block; /* Tornando a imagem um bloco para garantir que o título fique acima */
-            margin: 0 auto; /* Centralizando horizontalmente */
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        
+        #secao-projetos {
+            display: flex; 
+            justify-content: space-between; 
+            padding: 20px; 
+        }
+
+       
+        .cartao {
+            
+            margin-bottom: 20px; 
+            box-sizing: border-box; 
+        }
+
+        .cartao img {
+            width: 100%; 
+            height: auto; 
+        }
+
+        .cartao-texto {
+            padding: 10px; 
+            background-color: #f9f9f9; 
+            border: 1px solid #ddd;
+        }
+
+        
+        .cartao:hover .cartao-texto {
+            display: block; 
+        }
+
+        .cartao-texto {
+            display: none; 
+            position: absolute; 
+            bottom: 0;
+            left: 0; 
+            width: 100%; 
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px; 
+            text-align: center; 
         }
     </style>
 </head>
@@ -54,14 +95,94 @@
 
     <section class="second-section">
         <h2>Os Melhores Livros e Resenhas você encontra aqui!</h2>
-        <img src="./assets/CSS/images/Star 1.png" class="livro-foto" alt="foto do livro" /> 
+        <img src="./assets/CSS/images/Star 1-1.png" class="livro-foto" alt="foto do livro" /> 
         <div>
             <p>Em busca de aventuras emocionantes entre páginas? Descubra um mundo de possibilidades literárias em nosso site! Explore uma vasta coleção de livros online, onde cada página é uma porta para uma nova jornada. Além disso, mergulhe em resenhas que irão guiar você na escolha do próximo livro a embarcar. Descubra histórias que encantam, emocionam e inspiram. Não espere mais, comece sua jornada literária agora!</p>
         </div>
     </section>
    
-    <section id >
-        
+    <section id="secao-projetos">
+        <ul>
+            <li>
+                <div class="cartao">
+                    <div class="image-wrapper">
+                        <img src="./assets/CSS/images/lerquiser.jpg" alt="">
+                    </div>
+                    <div class="cartao-texto">
+                        <h2>Leia aonde Quiser!</h2>
+                        <p>Com nosso site, a leitura está ao alcance das suas mãos, onde quer que você esteja. Explore nossa vasta coleção de livros e mergulhe em histórias emocionantes a qualquer momento e em qualquer lugar. Seja em casa, no trabalho ou durante uma viagem, tenha acesso instantâneo a uma biblioteca virtual repleta de aventuras esperando para serem descobertas. Desfrute da liberdade de ler onde quiser, quando quiser, e deixe-se levar pelas páginas de infinitas possibilidades.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cartao">
+                    <div class="image-wrapper">
+                        <img src="./assets/CSS/images/resenha.jpg" alt="">
+                    </div>
+                    <div class="cartao-texto">
+                        <h2>As Melhores Resenhas!</h2>
+                        <p>Explore um mundo de leitura onde as melhores resenhas e notas dos leitores estão disponíveis a qualquer momento. Descubra insights valiosos, críticas sinceras e recomendações apaixonadas que o ajudarão a encontrar seu próximo livro favorito. Em nosso site, a comunidade compartilha suas experiências de leitura, transformando cada livro em uma aventura única e emocionante. Junte-se a nós e mergulhe em um universo de conhecimento literário!</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cartao">
+                    <div class="image-wrapper">
+                        <img src="./assets/CSS/images/comunidade.jpg" alt="">
+                    </div>
+                    <div class="cartao-texto">
+                        <h2>Uma Comunidade Incrível!</h2>
+                        <p>Faça parte de uma comunidade literária vibrante, onde cada página é uma nova oportunidade de fazer amigos e compartilhar suas paixões literárias. Troque ideias, descubra novos autores e mergulhe em conversas apaixonadas sobre seus livros favoritos. Nossa comunidade é um espaço acolhedor, repleto de entusiastas da leitura prontos para se conectar e expandir seus horizontes literários. Venha fazer novas amizades e explorar o vasto mundo da literatura conosco!</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
+
+<!-- Seção do formulário -->
+<section id="sessao-orcamento">
+    <h1>Venha fazer parte da nossa Comunidade </h1>
+    <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone">
+
+        <label for="livros">Número de Livros que você consome anualmente?</label>
+        <input type="number" id="livros">
+
+        <label for="tipo">Selecione a sua categoria favorita para receber uma resenha surpresa no seu e-mail!</label>
+        <select name="tipo" id="tipo">
+            <option value="1">Romance</option>
+            <option value="2">Terror</option>
+            <option value="3">Ficção Científica</option>
+            <option value="4">Literatura</option>
+            <option value="5">Fantasia</option>
+            <option value="6">História e Biografia</option>
+            <option value="7">Autoajuda e Desenvolvimento Pessoal:</option>
+            <option value="8">Não Ficção</option>
+            <option value="9">Histórias em Quadrinhos e Graphic Novels:</option>
+            <option value="10">Livros Infantis e Infantojuvenis</option>
+            <option value="11">Poesia:</option>
+            <option value="12">Mistério e Suspense</option>
+        </select>
+
+        <label for="whatsapp">Gostaria de receber nossas ofertas exclusivas por Whatsapp?</label>
+        <input name="whatsapp" type="radio" id="whatsapp_sim">
+        <label for="whatsapp_sim">Sim</label>
+        <input name="whatsapp" type="radio" id="whatsapp_nao">
+        <label for="whatsapp_nao">Não</label>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+
+
 </body>
 </html>
+

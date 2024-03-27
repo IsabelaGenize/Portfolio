@@ -1,41 +1,41 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-y: auto; 
-    overflow-x: auto; 
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: beige;
 }
 
 h1 {
     text-align: center;
-    color: #EAAFC8;
-    border: 3px solid #e458b7;
+    color: rgb(224, 30, 127);;
+    border: 3px solid rgb(228, 88, 183);
     font-size: 60px;
     background-color: beige;
     text-shadow: 3px 3px 1px black;
-    padding: 30px 0; 
-    line-height: 1; 
+    padding: 30px 0;
+    line-height: 1;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
 span {
-    color: #eb7fd0;
+    color: rgb(223, 17, 161);;
     font-size: 30px;
     text-shadow: 3px 3px 1px black;
     margin-bottom: 20px;
 }
 
 button {
-    background: linear-gradient(to bottom, #eb7fd0, #ffe3f8);
-
-    color: #eb7fd0;
-    border: 1px solid #e458b7;
+    background: linear-gradient(to bottom, #eb7fd0, #f6e8bb);
+    color: #d72e6f;
+    border: 1px solid hsl(319, 72%, 62%);
     font-size: 15px;
     text-shadow: 1px 1px 1px black;
     background-color: beige;
@@ -45,7 +45,7 @@ button {
     margin: 10px auto;
 }
 
-button:hover{
+button:hover {
     background-color: #d05ab3;
 }
 
@@ -55,37 +55,177 @@ a {
     gap: 1rem;
 }
 
-/*section */
-.home{
+.home {
     background-image: url(/assets/CSS/images/background-hero.png);
     margin: 0px;
     border: 50px;
     padding: 200px;
     padding-left: 5px;
     padding-right: 5px;
-   
-    
 }
 
 .second-section {
     display: flex;
     align-items: center;
-    background-color: #EAAFC8;
-    padding: 200px;
-    font-size: 30px;
+    background-color:beige;
+    padding: 150px;
+    font-size: 22px;
     text-shadow: 1px 1px 1px rgb(105, 24, 24);
-    font-family:'Times New Roman', Times, serif;
-    color: #51003d;
-    border: none;
-
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 32, 122);
+    border:hwb(329 11% 12%);
 }
-p{
-    color: #51003d;
-    border: none;
+.second-section h2 {
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px;
+    border: 2px solid #d2126c; 
+}
+
+
+
+p {
+    color: #e12d69;
+    border:#d61780;
     padding: 30px;
 }
 
 .livro-foto {
     flex: 0 0 auto;
     margin-right: 20px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    max-width: 550px; }
+
+#secao-projetos {
+    background-image: url(/assets/CSS/images/fundo.jpg);
+    padding: 20px;
+}
+
+#secao-projetos ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+}
+
+#secao-projetos li {
+    list-style: none;
+}
+
+.cartao {
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cartao img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.cartao-texto {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(234, 175, 200);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cartao:hover .cartao-texto {
+    display: block;
+}
+
+
+#sessao-orcamento {
+    background-image: url(/assets/CSS/images/backjag.jpg);
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 800px; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #ec8092; 
+    text-align: center; 
+}
+
+#sessao-orcamento form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 20px; 
+}
+
+
+#sessao-orcamento form label {
+    color: rgb(224, 30, 127);
+    font-size: 20px; 
+    text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.2); 
+}
+
+#sessao-orcamento form input[type="text"],
+#sessao-orcamento form input[type="number"],
+#sessao-orcamento form select,
+#sessao-orcamento form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: 1px solid #d2126c; 
+    background-color: beige;
+    color: #d72e6f; 
+    text-shadow: 1px 1px 1px black; }
+#sessao-orcamento form input[type="email"],
+#sessao-orcamento form input[type="tel"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    border: 1px solid #d2126c; 
+    background-color: beige;
+    color: #d72e6f; 
+    text-shadow: 1px 1px 1px black;
+
+
+#sessao-orcamento form select {
+    appearance: none; 
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d72e6f'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E"); /* Adicionar seta personalizada ao select */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+#sessao-orcamento form button {
+    background: linear-gradient(to bottom, #eb7fd0, #f6e8bb);
+    color: #d72e6f;
+    border: 1px solid #d2126c;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    background-color: beige;
+    padding: 10px 20px;
+    line-height: 1;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+#sessao-orcamento form button:hover {
+    background-color: #e91f7a;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
 }
