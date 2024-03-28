@@ -1,0 +1,52 @@
+.second-section {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(22, 28, 45, 1);
+    border: hwb(329 11% 12%);
+}
+
+.second-section .content {
+    flex: 1;
+    padding-right: 30px; /* Adicione o padding-right para criar espaço entre o texto e a imagem */
+}
+
+.second-section span:first-child {
+    color: red; /* Altera a cor do primeiro span para vermelho */
+}
+
+.second-section h1 {
+    font-size: 42px; /* Aumenta o tamanho da fonte do h1 */
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: -1px; /* Adicione esta linha para comprimir o texto do h1 */
+}
+
+.second-section span:nth-of-type(2) {
+    color: rgba(22, 28, 45, 0.7);
+    letter-spacing: -0.5px; /* Adicione esta linha para comprimir o texto do segundo span */
+}
+
+.second-section span {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.second-section button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #473BF0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px; /* Adicione o margin-top para mover o botão para baixo */
+}
+
+.second-section .livro-foto {
+    width: 463px;
+    height: auto;
+}

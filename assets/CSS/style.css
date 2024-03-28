@@ -55,14 +55,7 @@ a {
     gap: 1rem;
 }
 
-.home {
-    background-image: url(/assets/CSS/images/background-hero.png);
-    margin: 0px;
-    border: 50px;
-    padding: 200px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+
 
 .second-section {
     display: flex;
